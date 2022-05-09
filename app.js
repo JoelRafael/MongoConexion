@@ -2,8 +2,9 @@
 
 const express = require("express"),
       app = express(),
-      route = require("./Routes/routes")
-      app.use (route)
+      route = require("./Routes/routes");
+      app.use(express.json());
+      app.use (route);
 
     
       app.listen(3000, ()=>{
